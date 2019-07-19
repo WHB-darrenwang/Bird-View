@@ -111,7 +111,6 @@ function createTimeAlarm(inp_time,inp_mes,repeat){
     inp_mes = "!%)" + inp_mes + stand; //!%) means that it is a nonrepeating time alarm
   }
   chrome.alarms.create(inp_mes, alarmInfo); 
-  alert('here2 '+inp_mes);
 }
 
 function toStandardTime(mtime){
