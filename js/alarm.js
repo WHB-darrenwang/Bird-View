@@ -49,7 +49,7 @@ $('#add_button').click(function(){
 		var text = inp_min + " minute(s)";
 
 		//Create a single fire or repetitive fire alarm
-		if(inp_min !=0){
+		if(inp_min.length !=0){
 			var alarmInfo;
 			if(repeat){
 				alarmInfo = {
