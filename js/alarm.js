@@ -88,8 +88,8 @@ $('#add_button').click(function(){
  	var time = mes.substring(mes.length-8);
  	var fin_name = "%)"+name+time;
  	if(this.id == 'z7'){ //Repeats
- 		fin_name = "?"+fin_name;
  		chrome.storage.sync.get(['reTimeAlarms'],function(result){
+			fin_name = "?"+fin_name;
  			var items = result.reTimeAlarms;
  			var begin = items.indexOf(fin_name);
  			items = items.substring(0,begin) + items.substring(begin+fin_name.length);
