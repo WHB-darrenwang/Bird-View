@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Alarms </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style>
+		body{
+            width: 275px;
+            background-repeat: no-repeat;
+         }
+         a.menuBut {
+		    padding-top: 3px;
+		    font-family: 'OpenSansBold', sans-serif;
+		    background-color: black;
+		    letter-spacing: 1px;
+		    text-transform: uppercase;
+		    border-style: solid;
+		    border-color: black;
+		    border-width: 2px;
+		    cursor: pointer;
+		    transition: all cubic-bezier(0.48, 0.25, 0.13, 0.88) 0.5s;
+		    padding: 2px 1px 1px 4px;
+		    font-size: 14px;
+		    text-decoration: none;
+		    color: white;
+		    border-radius: 0px;
+		    transition: 0.1s;
+		}
+        a.menuBut:hover{
+          background-color: white;
+          color: black;
+        }
+        #container{
+         	width: 290px;
+         	margin: auto;
+         }
+         #left{
+         	width: 130px;
+         	float: left;
+         }
+         #right{
+         	width: 130px;
+         	float: right;
+         }
+         #alarms{
+         	overflow-y: auto;
+         }
+         #countdowns{
+         	overflow-y: auto;
+         }
+         #add_button{
+			background: white;
+		    border: 2px solid black;
+		    font-family: 'OpenSansBold', sans-serif;
+		    color: black;
+		    border-radius: 0px;
+		    font-size: 13px;
+		    padding: 0px 6px;
+		    letter-spacing: 1px;
+		    cursor: pointer;
+		    text-transform: uppercase;
+		}
+		#add_button:hover{
+			background-color: black;
+			color: white;
+			transition: 0.1s;
+		}
+	</style>
+</head>
+<body>
+	<a class="menuBut" href="popup.html"> &#8592 </a>
+	<a class="menuBut" href="checklist2.html"> Checklist </a>
+	<a class="menuBut" href="saved.html"> Saved </a>
+	<h1> Alarms </h1>
+
+	<!-- Create Alarms-->
+	<div>
+		<input id="message1" type="text" placeholder="Notice" size="20px">
+		<a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a>
+		<input id="repeat1" type="checkbox">
+		<a>Repeat</a>
+		<br><br>
+		<input id="minutes1" type="number" min="0.25" max="1440" placeholder="Minutes" style="width: 6.5em">
+		<a1>OR</a1>
+		<input id="time1" type="time" style="width: 8em">
+		<button id="add_button"> Add</button>
+		<div id="container">
+			<div id="left">
+				<h2>Countdowns</h2>
+				<div id="countdowns"></div>
+			</div>
+			<div id="right">
+				<h2>Alarms</h2>
+				<div id="alarms"></div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div id="list"></div>
+	<script src="../js/alarm.js"></script>
+</body>
+</html>

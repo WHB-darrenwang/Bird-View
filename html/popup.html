@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title> Main Menu Page </title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link href='https://fonts.googleapis.com/css?family=B612' rel='stylesheet'>
+
+      <style>
+        body{
+          width: 211px;
+          height: 166px;
+        }
+        button{
+          padding-top: 3px;
+          font-family: 'OpenSansBold', sans-serif;
+          border-radius: 25px;
+          background-color: transparent;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          border-style: solid;
+          border-color: black;  
+          border-width: 2px;
+          margin-left: 123px;
+          cursor: pointer;
+          transition: all cubic-bezier(0.48, 0.25, 0.13, 0.88) 0.5s;
+          font-size: 11px;
+          margin-top: -24px;
+        }
+        button:hover{
+          box-shadow: inset 100px 0 0 0 black;
+          color: white;
+        }
+        #icon{
+          float: left;
+        }
+        #imgBox{
+          position: absolute;
+          display: inline;
+          margin-left: -8px;
+          margin-top: -15px;
+        }
+        #buttonGroup{
+          position: absolute;
+        }
+        h1{
+          width: 137px;
+          font-family: 'B612';
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          border-style: solid;
+          font-weight: bolder;
+          padding: 3px 0px 1px 7px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        
+
+      <h1> Bird View</h1>
+      <br>
+      <div id="imgBox">
+        <img style="display:inline;"src="../images/boat.jpeg">
+      </div>
+      <div id="buttonGroup">
+        <button id="a0"> Checklist </button>
+        <br><br>
+
+        <button id="a1"> Alarms </button> 
+        <br><br>
+
+        <button id="a2"> Saved </button>
+      </div>
+      <script src="../js/popup.js"></script>
+    </body>
+  </html>

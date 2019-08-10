@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Checklist 2.0 </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<style>
+		body{
+			width: 275px;
+			background-repeat: no-repeat;
+		}
+		a.menuBut {
+		    padding-top: 3px;
+		    font-family: 'OpenSansBold', sans-serif;
+		    background-color: black;
+		    letter-spacing: 1px;
+		    text-transform: uppercase;
+		    border-style: solid;
+		    border-color: black;
+		    border-width: 2px;
+		    cursor: pointer;
+		    transition: all cubic-bezier(0.48, 0.25, 0.13, 0.88) 0.5s;
+		    padding: 2px 1px 1px 4px;
+		    font-size: 14px;
+		    text-decoration: none;
+		    color: white;
+		    border-radius: 0px;
+		    transition: 0.1s;
+		}
+        a.menuBut:hover{
+          background-color: white;
+          color: black;
+        }
+		#createBox{
+			height: 20px;
+			width: 194px;
+			background-color: #f0eded;
+			cursor: text;
+		}
+		#add_but{
+			background: white;
+		    border: 2px solid black;
+		    font-family: 'OpenSansBold', sans-serif;
+		    color: black;
+		    border-radius: 0px;
+		    font-size: 13px;
+		    padding: 0px 6px;
+		    letter-spacing: 1px;
+		    cursor: pointer;
+		    text-transform: uppercase;
+		}
+		#add_but:hover{
+			background-color: black;
+			color: white;
+			transition: 0.1s;
+		}
+		.catBut{
+			width: 75px;
+			text-align: left;
+			overflow-wrap: break-word;
+			background: transparent;
+			background-color: white;
+			border-color: black;
+			cursor: pointer;
+			color: black;
+		}
+		.catBut:hover{
+			position: relative;
+			z-index: 2;	
+		}
+		.renameBox{
+			width: 188px;
+		}
+		.itemSpace{
+			width: 192px;
+			overflow-wrap: break-word;
+		}
+		.removeCat{
+			background-color: white;
+    		border: 2px solid black;
+    		border-radius: 10px;
+    		font-family: 'OpenSansBold', sans-serif;
+    		color: black;
+    		cursor: pointer;
+    		font-weight: bolder;
+		}
+		.removeCat:hover{
+			background-color: black;
+			color: white;
+			transition: 0.1s;
+		}
+		.removeCat:active{
+			background-color: #87CEEB;
+			border-color: #87CEEB;
+		}
+		h2{
+			margin-block-start: 4px;
+    		margin-block-end: 1px;
+    		cursor: pointer;
+    		overflow-wrap: break-word;
+    		width: 225px;
+    		display: inline-block;
+		}
+		h2:hover{
+			color: #0099CC;
+		}
+	</style>
+</head>
+<body>
+	<a class="menuBut" href="popup.html"> &#8592 </a>
+	<a class="menuBut" href="alarm.html"> Alarms </a>
+	<a class="menuBut" href="saved.html"> Saved </a>
+	<h1> Checklist </h1>
+
+	<!-- Input and output of checklist items -->
+	<input id ="input" type="text" placeholder="New Category">
+	<button id="add_but"> Enter	 </button>
+	<br><br>
+	<div id="buttonlist">
+		<button id="All" class="catBut" style="margin-right:-3px"> All </button>
+	</div>
+
+	<div id="list" style="overflow-y:auto;"></div>
+	<script src="../js/checklist2.js"></script>
+</body>
+</html>
