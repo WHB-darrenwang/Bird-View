@@ -1,4 +1,4 @@
-#Bird View
+##Bird View
 
 
 Allow yourself to become more organized and productive by viewing your tasks from a bird's eye view.
@@ -6,19 +6,19 @@ Bird View is a productivity google extension app based on a prototype named BonB
 
 Procrastination and being unorganized is a big problem for many teenagers and college students. While planners allow students to write down detailed schedules, it is easier for a digital copy to appear on the side when they are on google chrome. With organized checklists broken down into categories, alarms to force pages to open, and a bookmarking system, it allows users to be on task every minute.
 
----------MENU--------
+---------MENU--------<br>
 ***Opening "Bird View" Menu***
 -Click the eye icon
 -Press "Ctrl+Shift+Y" for Windows, Linux, Chrome OS
 -Press "Command+Shift+Y" for Mac
 
----------CHECKLIST--------
+---------CHECKLIST--------<br>
 -Double click the "x" button to delete list
 -Click on categories or list items to rename and hit ENTER
 -Check off the checkbox to delete the item
 -Last opened category will open when you reopen the extension
 
----------ALARM--------
+---------ALARM--------<br>
 -Enter the name or message for the alarm
 -Check off the repeat checkbox if you want the alarm to repeat
 -Enter a value for either countdown box OR time box
@@ -26,7 +26,7 @@ Procrastination and being unorganized is a big problem for many teenagers and co
 -To force open a page at a certain time, type /os:index where index is the index of the URL item in SAVED
      -> eg. /os:1 opens the first URL on the saved list
 
----------SAVED--------
+---------SAVED--------<br>
 ***Bookmarking a page***
 -Press "Ctrl+Shift+K" for Windows, Linux, Chrome OS
 -Press "Command+Shift+K" for Mac
