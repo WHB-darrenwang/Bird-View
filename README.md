@@ -5,7 +5,7 @@ Bird View is a productivity google extension app based on a prototype named BonB
 
 Procrastination and being unorganized is a big problem for many teenagers and college students. While planners allow students to write down detailed schedules, it is easier for a digital copy to appear on the side when they are on google chrome. With organized checklists broken down into categories, alarms to force pages to open, and a bookmarking system, it allows users to be on task every minute.
 
-Video: https://www.youtube.com/watch?v=YPSdw3hXXfM
+Video: https://www.youtube.com/watch?v=YPSdw3hXXfM <br>
 Google extension: https://chrome.google.com/webstore/detail/bird-view/nedhbmbmfecolmfklhpjilhnbaioelad?authuser=3
 
 ## MENU<br>
